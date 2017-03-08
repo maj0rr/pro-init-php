@@ -2,10 +2,7 @@ version: '2'
 
 services:
   web:
-    build:
-      context: ./systems/web
-      dockerfile: Dockerfile
-    image: chriha/web
+    image: chriha/web:latest
     volumes:
       - ./src:/var/www
     ports:
@@ -30,10 +27,7 @@ services:
     networks:
       - def_network
   node:
-    build:
-      context: ./systems/node
-      dockerfile: Dockerfile
-    image: chriha/node
+    image: chriha/node:latest
     volumes:
       - ./src:/var/www
     networks:
