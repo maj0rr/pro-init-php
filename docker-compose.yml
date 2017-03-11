@@ -2,7 +2,7 @@ version: '2'
 
 services:
   web:
-    image: chriha/web:php71-0.1
+    image: chriha/web:php71-latest
     volumes:
       - ./src:/var/www
     ports:
@@ -29,7 +29,7 @@ services:
     networks:
       - def_network
   node:
-    image: chriha/node:7.2-0.1
+    image: chriha/node:7.2-latest
     volumes:
       - ./src:/var/www
     networks:
