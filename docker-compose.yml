@@ -2,7 +2,7 @@ version: '2'
 
 services:
   web:
-    image: chriha/web:php71-latest
+    image: chriha/web:php7.1-latest
     volumes:
       - ./src:/var/www
     ports:
