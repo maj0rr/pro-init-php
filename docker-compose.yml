@@ -29,7 +29,7 @@ services:
     networks:
       - def_network
   node:
-    image: chriha/node:7.2-latest
+    image: chriha/node:7.7-latest
     volumes:
       - ./src:/var/www
     networks:
