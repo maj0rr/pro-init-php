@@ -58,12 +58,12 @@ services:
       RABBITMQ_DEFAULT_PASS: "${RABBITMQ_PASS}"
     ports:
       - "15672:15672"
-    mailcatcher:
-      image: chriha/mailcatcher:0.6-latest
-      networks:
-        - def_network
-      ports:
-        - "1080:1080"
+  mailcatcher:
+    image: chriha/mailcatcher:0.6-latest
+    networks:
+      - def_network
+    ports:
+      - "1080:1080"
 
 networks:
   def_network:
