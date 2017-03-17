@@ -64,7 +64,15 @@ services:
     networks:
       - def_network
     ports:
-      - "1080:1080"
+      - "${MAILCATCHER_PORT}:1080"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "${MYADMIN_PORT}:80"
+    networks:
+      - def_network
+    links:
+      - db
 
 networks:
   def_network:
