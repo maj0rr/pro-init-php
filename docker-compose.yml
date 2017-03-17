@@ -13,6 +13,7 @@ services:
       - db
       - redis
       - rabbit
+      - mailcatcher
     env_file:
       - ./src/.env
   db:
