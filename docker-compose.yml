@@ -78,4 +78,3 @@ services:
 networks:
   def_network:
     driver: "bridge"
-
